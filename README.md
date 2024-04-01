@@ -31,7 +31,7 @@ Holds records of teachers including their name, subject specialties, and contact
 ### Parents: 
 Maintains parent or guardian details linked to students.
 ### Enrollments:
-A junction table that links students to classrooms and assigned teachers.
+Join table that holds a students enrollments. 
 
 
 ## Getting Started
