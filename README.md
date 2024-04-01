@@ -1,14 +1,15 @@
 # school_manager
 MySQL School Management database. 
 
-# School Management System Database
+# MySQL School Management System Database version 1.0
 <img width="895" alt="final_schema" src="https://github.com/AnthonyMMiller/school_manager/assets/39473837/855b5fbb-1b72-4a04-9c1c-91e9db304fd6">
 
+Objective: Create a database that can be used by schools to manage its students and teachers. When paired with a GUI, can make it easy to enroll students, check grades, check attendance, etc. This boiler plate can be easily expanded to include more functionality. 
 
-Overview
+**Overview**
 This MySQL database is designed for educational institutions to efficiently manage and track students, classrooms, teachers, and parents. It facilitates the storage, retrieval, and manipulation of data related to the academic and administrative aspects of school operations.
 
-Features
+**Features**
 Student Tracking: Manage student details including personal information, academic records, and classroom assignments.
 Classroom Management: Organize classrooms, including class schedules, assigned teachers, and enrolled students.
 Teacher Records: Maintain comprehensive records of teachers, including their personal details, qualifications, and assigned classes.
@@ -49,6 +50,17 @@ Retrieving All Students in a Classroom
 SELECT Students.name FROM Students
 JOIN Classroom_Assignments ON Students.classroom_id = Classroom_Assignments.classroom_id
 WHERE Classroom_Assignments.classroom_id = 1;
+
+Useful functions: 
+GetAverageGrade(student_id INT) can used a students grades and calculate the average grade.
+GetAttendancePercentage(student_id INT) can be used to see an attendance percentage for a student. 
+
+Useful Views:
+StudentPerformanceSummary Performance summary for all students. 
+CourseEnrollmentDetail Check all of your enrollments at a glance. 
+
+Other features:
+Alerts table can be used to send notifcations.
 
 Contributing
 Contributions to the School Management System database are welcome. Please feel free to fork the repository, make your changes, and submit a pull request.
