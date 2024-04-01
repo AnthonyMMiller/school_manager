@@ -2,6 +2,8 @@
 MySQL School Management database. 
 
 # School Management System Database
+![Anthony_Miller_final_project_schema](https://github.com/AnthonyMMiller/school_manager/assets/39473837/a4b4081f-3b2a-4bc0-8b94-8b771396c70f)
+
 Overview
 This MySQL database is designed for educational institutions to efficiently manage and track students, classrooms, teachers, and parents. It facilitates the storage, retrieval, and manipulation of data related to the academic and administrative aspects of school operations.
 
